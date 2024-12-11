@@ -74,7 +74,7 @@
                 <h6>Home/<?php echo $category_title;?></h6>
                 <h4><?php echo $product_title;?></h4>
                 <h2><?php echo $price .' BDT';?></h2>
-                <form action="<?php echo SITEURL;?>cart.php" method="GET">
+                <form action="<?php echo SITEURL;?>add-to-cart.php" method="GET">
                 <select name="size">
                     <option value="">Select Size</option>
                     <option value="XL">XL</option>

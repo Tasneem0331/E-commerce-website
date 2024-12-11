@@ -10,6 +10,21 @@
 
 
         <section id="product1" class="section-p1 filter">
+        <div class="sec1" >
+            <h3>Filter Products.</h3>
+
+        <div id="filter-by-price">
+            <br>
+
+                <form action="<?php echo SITEURL;?>product-search-price.php" method="post">
+                <label for="Price">Price:</label>
+                    <input type="number" name="min_price" placeholder="Min" required >
+                    <input type="number" name="max_price" placeholder="Max" requried>
+                    <br> <br>
+                    <input type="submit" name="apply" value="Apply"  class="button normal">
+                </form>
+            </div>
+            </div>
             
             <div class="pro-container sec2">
                 <?php
@@ -65,8 +80,9 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
+                                <i class="fa-duotone fa-light fa-bangladeshi-taka-sign"></i>
                             </div>
-                            <h4><?php echo $price.' BDT'?></h4>
+                            <h4><i class="fa-solid fa-bangladeshi-taka-sign"></i></i><?php echo " $price"?></h4>
                         </div>
                         <a href="<?php echo SITEURL;?>sproduct1.php?product_id=<?php echo $id;?>" class="btn-normal"> See Details</a>
                     </div>
@@ -82,9 +98,7 @@
                 
             
             </div>
-            <div class="sec1" >
-                Lorem ipsum dolor sit, amet  adipisicing elit. Accusantium ullam asperiores illum soluta sapiente expedita reiciendis, accusamus incidunt. Assumenda sed pariatur libero officia et praesentium veritatis quae eligendi atque, voluptates natus nihil nemo quia expedita odit inventore reiciendis maiores! Voluptatibus, explicabo ipsa. Dicta facilis, repellat distinctio praesentium cumque odit quibusdam!
-            </div>
+            
 
         </section>
 

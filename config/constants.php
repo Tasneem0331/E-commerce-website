@@ -4,7 +4,7 @@
 session_start();
 
 // Create constants to store non-repeating values
-define('SITEURL','http://localhost/E-commerce-website/');
+define('SITEURL','http://localhost/E-commerce-website/3100/');
 define('LOCALHOST', 'localhost');  // Constants are typically written in uppercase
 define ('DB_USERNAME','root');
 define('DB_PASSWORD','');
