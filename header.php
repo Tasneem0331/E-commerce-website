@@ -12,7 +12,7 @@
     </head>
     <body>
         <section id="header">
-            <a href="#"> <img src="image/logo.jpeg" alt="" height="70px" width="60px"></a>
+            <a href="<?php echo SITEURL;?>index.php"><img src="image/logo.jpeg" alt="" height="70px" width="60px"></a>
             <div id="search-bar">
                 <form action="<?php echo SITEURL;?>product-search.php" method="post">
                     <input type="search" name="search" placeholder="Search in gifty" required >
@@ -26,6 +26,10 @@
                     <li><a href="<?php echo SITEURL;?>shop.php">Shop</a></li>
                     <li><a href="<?php echo SITEURL;?>about.php">About</a></li>
                     <li><a href="<?php echo SITEURL;?>contact.php">Contact</a></li>
+                    <li><a href="<?php echo SITEURL;?>logIn.php">Log In</a></li>
+                    <li><a href="<?php echo SITEURL;?>user-logout.php">Log Out</a></li>
+                   
+
                     <li id="lg-bag"><a href="<?php echo SITEURL;?>cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <a href="#" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
                 </ul>

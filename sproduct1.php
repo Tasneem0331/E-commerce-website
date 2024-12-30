@@ -74,7 +74,7 @@
                 <h6>Home/<?php echo $category_title;?></h6>
                 <h4><?php echo $product_title;?></h4>
                 <h2><?php echo $price .' BDT';?></h2>
-                <form action="<?php echo SITEURL;?>add-to-cart.php" method="GET">
+                <form action="<?php echo SITEURL;?>addcart.php">
                 <select name="size">
                     <option value="">Select Size</option>
                     <option value="XL">XL</option>
@@ -85,7 +85,10 @@
                 
                     <input type="hidden" name="product_id" value="<?php echo $product_id;?>">
                     <input type="number" name="quantity" value="1">
-                    <button class="btn-normal" type="submit">Add to Cart</button>
+                    <button type='submit' class="btn-normal">
+                        <i class="fa fa-cart-arrow-down"></i> Add To Cart
+                    </button>
+                   
                 </form>
                 <h4>Product Details</h4>
                 <span>

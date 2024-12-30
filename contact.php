@@ -1,4 +1,34 @@
 <?php include('header.php');?>
+<?php
+ if(isset($_POST['submit']))
+ {
+ 
+     $username=$_POST['name'];
+     $email=$_POST['email'];
+     $subject=$_POST['subject'];
+     $message=$_POST['message'];
+
+     //write sql
+    
+    $sql= "INSERT INTO customer_query (name,email,subject,message)
+    VALUES ( '$username', '$email','$subject','$message')";
+
+    //execute the query
+    $res=mysqli_query($conn,$sql);
+    
+    //if send message successfully then send a session message
+    if($res){
+        $_SESSION['send message']="<div class='success'>send message successfully.</div>";
+        header('location:'.SITEURL.'contact.php');
+    }
+    else{
+
+        $_SESSION['send message']="<div class='error'>Failed to send message.</div>";
+        header('location:'.SITEURL.'contact.php');
+    }
+
+}
+?>
 
         <section id="page-header" class="about-header">
         
@@ -45,13 +75,24 @@
         </section>
 
         <section id="form-details">
-            <form action="">
+            <?php
+            
+            if (isset($_SESSION['send message'])) // checking whether the session set or not
+                {
+                    echo "<br>";
+                    echo $_SESSION['send message']; //displaying session messsage
+                    unset($_SESSION['send message']); // revoming session message
+                   
+                } 
+        ?>
+            <form action="" method="post">
                 <span>LEAVE A MESSAGE</span>
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-                <button>Submit</button>
+                <h2>We love to hear from you</h2>
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="text" name="email" placeholder="E-mail" required>
+                <input type="text" name="subject" placeholder="Subject" >
+                <textarea name="message" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <input type="submit"  name="submit" value="Submit" class="btn-normal " >
             </form>
 
         </section>

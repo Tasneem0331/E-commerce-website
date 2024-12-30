@@ -888,16 +888,16 @@ border-bottom-right-radius: 0;
 #cart table thead td{
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 14px;
   padding: 18px 0;
 }
 
 #cart table tbody tr td{
-  padding-top: 15px;
+  padding-top: 14px;
 }
 
 #cart table tbody td{
-  font-size: 17px;
+  font-size: 15px;
 }
 #cart .product a{
   text-decoration: none;
@@ -909,7 +909,8 @@ border-bottom-right-radius: 0;
 #card-add{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
+
 }
 #cupon{
   width: 50%;
@@ -945,7 +946,7 @@ border-bottom-right-radius: 0;
   margin-bottom: 30px;
   border: 1px solid #e2e9e1;
   padding: 30px;
-
+  
 }
 
 #Subtotal table{
@@ -957,7 +958,7 @@ border-bottom-right-radius: 0;
   width: 50%;
   border: 1px solid #e2e9e1;
   padding: 10px;
-  font-size: 13px;
+  font-size: 15px;
 
 }
 
@@ -992,11 +993,13 @@ border-bottom-right-radius: 0;
 #contact_details .details{
   width: 40%;
 }
-#contact_details .details span{
+#contact_details .details span,
+#form-details form span{
   font-size: 12px;
 }
 
-#contact_details .details h2{
+#contact_details .details h2,
+#form-details form h2{
   font-size: 26px;
   line-height:35px ;
   padding: 20px 0;
@@ -1028,6 +1031,32 @@ border-bottom-right-radius: 0;
 #contact_details .map iframe{
   width: 100%;
   height: 100%;
+}
+#form-details{
+  width: 50%;
+  
+  margin: 30px;
+  margin-left: 50px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+#form-details form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+#form-details form button{
+  background-color: #088178;
+  color: #fff;
 }
  /*-----------------------------------------Media Query----------------------------------*/
 @media (max-width:799px){
@@ -1131,11 +1160,10 @@ width: 28%;
   
   width: 70%;
 }
-#form-details form{
-  width: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+/*contact page*/
+#form-details{
+  padding: 40px;
 
 }
 
@@ -1256,5 +1284,27 @@ h2 {
   width: 100%;
  
 }
+
+/*------------------ contact page--------------*/
+#contact_details{
+  flex-direction: column;
+}
+#contact_details .details{
+  width: 100%;
+  margin-bottom: 30px;
+}
+#contact_details .map{
+  width: 100%;
+}
+#form-details{
+  margin: 10px;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+#form-details form{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 }
  

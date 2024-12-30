@@ -82,7 +82,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fa-duotone fa-light fa-bangladeshi-taka-sign"></i>
                             </div>
-                            <h4><i class="fa-solid fa-bangladeshi-taka-sign"></i></i><?php echo " $price"?></h4>
+                            <h4><i class="fa-solid fa-bangladeshi-taka-sign"></i><?php echo " $price"?></h4>
                         </div>
                         <a href="<?php echo SITEURL;?>sproduct1.php?product_id=<?php echo $id;?>" class="btn-normal"> See Details</a>
                     </div>

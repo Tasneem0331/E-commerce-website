@@ -20,6 +20,39 @@
             </div>
 
         </section>
+        <section id="feature" class="section-p1">
+    <div class="fe-box">
+        <img src="image/features/f1.png" alt="">
+        <h6>Free Shipping</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="image/features/f2.png" alt="">
+        <h6>Online Order</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="image/features/f3.png" alt="">
+        <h6>Save Money</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="image/features/f4.png" alt="">
+        <h6>Promotions</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="image/features/f5.png" alt="">
+        <h6>Happy Sell</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="image/features/f6.png" alt="">
+        <h6>Support</h6>
+
+    </div>
+</section>
+
         
         <section id="newsletter" class="section-p1 section-m1">
             <div class="news">

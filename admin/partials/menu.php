@@ -17,6 +17,7 @@
                     <li><a href="manage-category.php">Category</a></li>
                     <li><a href="manage-product.php">Product</a></li>
                     <li><a href="manage-order.php">Order</a></li>
+                    <li><a href="customer-query.php">Customer Query</a></li>
                     <li><a href="logout.php">Logout</a></li>
 
                 </ul>
