@@ -12,17 +12,19 @@
     <body>
         <div class="container">
             <h2>Login</h2>
+            
              <?php
-                   if(isset($_SESSION['login']))
-                   {
-                    echo $_SESSION['login']; //displaying session messsage
-                    unset($_SESSION['login']); // revoming session message
-                   }
-                   if(isset($_SESSION['no-login-msg']))
-                   {
-                    echo $_SESSION['no-login-msg']; //displaying session messsage
-                    unset($_SESSION['no-login-msg']); // revoming session message
-                   }
+         
+                    if(isset($_SESSION['login']))
+                    {
+                        echo $_SESSION['login']; //displaying session messsage
+                        unset($_SESSION['login']); // revoming session message
+                    }
+                    if(isset($_SESSION['no-login-msg']))
+                    {
+                        echo $_SESSION['no-login-msg']; //displaying session messsage
+                        unset($_SESSION['no-login-msg']); // revoming session message
+                    }
              ?>
              
 
@@ -30,16 +32,12 @@
             <form action="#" method="post">
                 <label for="Username">Username</label>
                 <input type="text"  name="username" placeholder="User Name" >
-
                 <br>
                 <label for="password">Password</label>
                 <input type="password"  name="password" placeholder="Password">
-               <br><br>
+                <br><br>
                 <input type="submit" name= 'submit' value="login" class="btn-secondary  ">
-                
-          
             </form>
-
         </div>
     </body>
 

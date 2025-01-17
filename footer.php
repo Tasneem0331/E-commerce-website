@@ -52,7 +52,7 @@
 
             </div>
             <div class="copyright">
-                <p> &copy Made by Jahin Tasneem Student of RUET CSE</p>
+                <p> &copy Made by Fairina Islam Student of RUET CSE</p>
             </div>
 
         </footer>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
  
@@ -95,4 +96,103 @@ body{
   padding: 10px;
   font-size: 15px;
 
+=======
+
+body{
+ 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   
+   }
+   
+   .container{
+       padding: 50px;
+       max-width: 100%;
+   align-content: center;
+   background-color: #e3e6f3;
+   box-sizing: border-box;
+   
+   }
+   
+   h2{
+       text-align: center;
+   }
+   input[type=text], input[type=password],input[type=email],input[type=date],input[type=tel] {
+       width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+      display: flex;
+       border: 1px solid #ccc;
+       box-sizing: border-box;
+       margin-bottom: auto;
+       
+      
+     }
+    
+    .btn-normal
+    {
+      background-color: #088178;
+      color: white;
+      padding: 2%;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+    .btn-normal:hover
+    {
+      background-color: #056d66;
+    }
+    
+    .success{
+      color: #2ed573;
+    }
+  
+    .error{
+      color: #ff4757;
+    }
+
+
+    .section-p1 {
+      padding: 40px 80px;
+    }
+    #card-add{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    
+    }
+    #Subtotal h3
+{
+  padding-bottom: 15px;
+}
+#Subtotal button{
+
+  background-color: #088178;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 4px;
+}
+#Subtotal{
+  width: 30%;
+  margin-left: 50px;
+  margin-top: 30px;
+
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+  
+}
+
+#Subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#Subtotal table td{
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 15px;
+
+>>>>>>> d4ddf238279708925d35d94052317b6051982ed6
 }
